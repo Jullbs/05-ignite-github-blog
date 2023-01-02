@@ -1,12 +1,17 @@
+import { PostsDisplay } from './components/PostsDisplay'
+import { SearchBar } from './components/SearchBar'
 import { Summary } from './components/Summary'
+
 import { HomeContainer } from './styles'
 
 export function Home() {
   return (
     <HomeContainer>
       <Summary />
-      <p>SearchBar</p>
-      <p>Posts</p>
+
+      <SearchBar />
+
+      <PostsDisplay />
     </HomeContainer>
   )
 }

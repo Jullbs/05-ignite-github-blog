@@ -44,7 +44,10 @@ export function Summary() {
           <h1>{userInfo.name}</h1>
         </div>
 
-        <p>{userInfo.bio}</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
 
         <div>
           <span>

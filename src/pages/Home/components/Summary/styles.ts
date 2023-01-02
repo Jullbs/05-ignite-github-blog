@@ -22,9 +22,15 @@ export const SummaryContainer = styled.div`
     all: unset;
     display: flex;
     gap: 0.5rem;
+    height: 1rem;
 
     font-size: 0.75rem;
+    cursor: pointer;
     color: ${(props) => props.theme['blue-300']};
+
+    &:hover {
+      border-bottom: 1px solid ${(props) => props.theme['blue-300']};
+    }
   }
 `
 
