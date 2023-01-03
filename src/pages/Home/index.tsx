@@ -1,13 +1,13 @@
 import { PostsDisplay } from './components/PostsDisplay'
 import { SearchBar } from './components/SearchBar'
-import { Summary } from './components/Summary'
+import { UserSummary } from './components/UserSummary'
 
 import { HomeContainer } from './styles'
 
 export function Home() {
   return (
     <HomeContainer>
-      <Summary />
+      <UserSummary />
 
       <SearchBar />
 

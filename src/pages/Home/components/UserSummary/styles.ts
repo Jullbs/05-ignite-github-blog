@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const SummaryContainer = styled.div`
+export const UserSummaryContainer = styled.div`
   display: flex;
   max-width: 54rem;
   border-radius: 10px;

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 import { api } from '../../../../lib/axios'
 
-import { SummaryContainer, SummaryContent } from './styles'
+import { UserSummaryContainer, SummaryContent } from './styles'
 
 import { FaGithub, FaBuilding, FaUserFriends } from 'react-icons/fa'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 
-export function Summary() {
+export function UserSummary() {
   const [userInfo, setUserInfo] = useState({
     name: '',
     bio: '',
@@ -36,7 +36,7 @@ export function Summary() {
   }, [])
 
   return (
-    <SummaryContainer>
+    <UserSummaryContainer>
       <img src={userInfo.avatar} alt="" />
 
       <SummaryContent>
@@ -74,6 +74,6 @@ export function Summary() {
       <a href={userInfo.url}>
         GITHUB <BsBoxArrowUpRight />
       </a>
-    </SummaryContainer>
+    </UserSummaryContainer>
   )
 }
