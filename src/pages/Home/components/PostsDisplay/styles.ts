@@ -3,11 +3,15 @@ import styled from 'styled-components'
 export const PostsDisplayContainer = styled.div`
   display: flex;
   max-width: 54rem;
-  flex-wrap: wrap;
-  gap: 2rem;
+
+  > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
 `
 
-export const PostCard = styled.div`
+export const PostCard = styled.li`
   display: flex;
   flex-direction: column;
   max-width: 26rem;
@@ -22,9 +26,10 @@ export const PostCard = styled.div`
     gap: 1rem;
 
     > h2 {
-      max-width: 17.6875rem;
+      max-width: 17rem;
       font-size: 1.25rem;
       line-height: 160%;
+      color: ${(props) => props.theme['indigo-100']};
     }
 
     > p {

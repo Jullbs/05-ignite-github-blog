@@ -22,22 +22,24 @@ export const SearchBarContainer = styled.div`
     }
   }
 
-  > input {
-    width: 54rem;
-    padding: 0.75rem 1rem;
+  > form {
+    > input {
+      width: 54rem;
+      padding: 0.75rem 1rem;
 
-    background: ${(props) => props.theme['indigo-1000']};
-    border: 1px solid ${(props) => props.theme['indigo-600']};
-    border-radius: 6px;
+      background: ${(props) => props.theme['indigo-1000']};
+      border: 1px solid ${(props) => props.theme['indigo-600']};
+      border-radius: 6px;
 
-    color: ${(props) => props.theme['indigo-300']};
+      color: ${(props) => props.theme['indigo-300']};
 
-    &::placeholder {
-      color: ${(props) => props.theme['indigo-500']};
-    }
+      &::placeholder {
+        color: ${(props) => props.theme['indigo-500']};
+      }
 
-    &:focus {
-      outline: 1px solid ${(props) => props.theme['blue-300']};
+      &:focus {
+        outline: 1px solid ${(props) => props.theme['blue-300']};
+      }
     }
   }
 `

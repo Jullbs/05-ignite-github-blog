@@ -63,15 +63,15 @@ export function UserSummary() {
           <span>
             <FaUserFriends />
             <p>
-              {userInfo.followers > 1
-                ? `${userInfo.followers} seguidores`
-                : `${userInfo.followers} seguidor`}
+              {userInfo.followers === 1
+                ? `${userInfo.followers} seguidor`
+                : `${userInfo.followers} seguidores`}
             </p>
           </span>
         </div>
       </SummaryContent>
 
-      <a href={userInfo.url}>
+      <a href={userInfo.url} target="_blank" rel="external noreferrer">
         GITHUB <BsBoxArrowUpRight />
       </a>
     </UserSummaryContainer>

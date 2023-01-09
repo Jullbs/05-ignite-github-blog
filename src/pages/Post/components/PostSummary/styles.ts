@@ -55,5 +55,9 @@ export const SummaryInfo = styled.div`
     > svg {
       color: ${(props) => props.theme['indigo-500']};
     }
+
+    > p {
+      color: ${(props) => props.theme['indigo-400']};
+    }
   }
 `
