@@ -39,7 +39,7 @@ export function PostSummary({ postData }: PostSummaryProps) {
       <SummaryInfo>
         <span>
           <FaGithub />
-          <p>jullbs</p>
+          <p>{postData.user.login}</p>
         </span>
 
         <span>

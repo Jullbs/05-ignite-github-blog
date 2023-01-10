@@ -13,6 +13,9 @@ export interface PostDataType {
   created_at: string
   comments: number
   html_url: string
+  user: {
+    login: string
+  }
 }
 
 export function Post() {
@@ -23,6 +26,9 @@ export function Post() {
     created_at: '',
     comments: 0,
     html_url: '',
+    user: {
+      login: '',
+    },
   })
 
   useEffect(() => {
@@ -31,7 +37,6 @@ export function Post() {
         `repos/jullbs/05-ignite-github-blog/issues/${number}`,
       )
 
-      console.log(response.data)
       setPostData(response.data)
     }
 
