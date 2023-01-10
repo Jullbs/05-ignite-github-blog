@@ -8,10 +8,15 @@ export const PostsDisplayContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+
+    > li {
+      list-style-type: none;
+    }
   }
 `
 
-export const PostCard = styled.li`
+export const PostCard = styled.button`
+  all: unset;
   display: flex;
   flex-direction: column;
   max-width: 26rem;
@@ -20,6 +25,8 @@ export const PostCard = styled.li`
   border-radius: 10px;
 
   background: ${(props) => props.theme['indigo-700']};
+  border: 2px solid ${(props) => props.theme['indigo-700']};
+  transition: border 0.75s;
 
   > span {
     display: flex;
@@ -38,12 +45,18 @@ export const PostCard = styled.li`
     }
   }
 
-  > p {
+  .react-markdown {
     line-height: 160%;
+    max-width: 21.75rem;
 
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid ${(props) => props.theme['indigo-500']};
   }
 `
